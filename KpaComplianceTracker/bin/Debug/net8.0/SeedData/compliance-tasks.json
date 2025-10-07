@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Forklift Annual Training",
+    "category": "Training",
+    "site": "Longmont",
+    "owner": "Alex",
+    "dueDate": "2025-10-15T00:00:00Z",
+    "status": "Open"
+  },
+  {
+    "title": "SPCC Inspection",
+    "category": "EHS",
+    "site": "Service Center A",
+    "owner": "Priya",
+    "dueDate": "2025-10-30T00:00:00Z",
+    "status": "In Progress"
+  },
+  {
+    "title": "Fire Drill Coordination",
+    "category": "Safety",
+    "site": "Denver HQ",
+    "owner": "Michael",
+    "dueDate": "2025-11-05T00:00:00Z",
+    "status": "Pending"
+  },
+  {
+    "title": "Hazardous Waste Audit",
+    "category": "Compliance",
+    "site": "Longmont",
+    "owner": "Sarah",
+    "dueDate": "2025-11-10T00:00:00Z",
+    "status": "Open"
+  }
+]

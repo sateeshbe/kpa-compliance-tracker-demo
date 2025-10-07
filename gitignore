@@ -1,0 +1,50 @@
+# ===== .NET / C# =====
+**/bin/
+**/obj/
+.vs/
+*.user
+*.suo
+*.ncrunch*
+*.local.json
+
+# Logs & temp
+**/logs/
+*.log
+
+# Rider/VSCode/IDE
+.idea/
+.vscode/
+*.code-workspace
+
+# ===== Angular / Node =====
+**/node_modules/
+**/dist/
+**/.angular/cache/
+**/.npm/
+**/.pnpm-store/
+
+# Test & coverage
+coverage/
+**/coverage/
+
+# ===== OS cruft =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+
+
+# Angular environment files (if any)
+**/src/environments/*.ts
+!**/src/environments/environment.example.ts
+
+# ===== Build artifacts (misc) =====
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
+
+# ===== OneDrive/Cloud sync artifacts =====
+*.lnk
+~$*

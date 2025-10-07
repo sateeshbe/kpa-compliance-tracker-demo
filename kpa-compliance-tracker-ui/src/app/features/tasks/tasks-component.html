@@ -1,0 +1,45 @@
+<h2 class="mb-3">Tasks</h2>
+
+<div class="table-responsive">
+  <table class="table table-sm table-striped align-middle">
+    <thead class="table-light">
+      <tr>
+        <th>Title</th>
+        <th>Category</th>
+        <th>Site</th>
+        <th>Owner</th>
+        <th>Status</th>
+        <th>Due</th>
+        <th>S3 Key</th>
+        <th class="text-end">Actions</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let r of rows">
+        <td><input class="form-control form-control-sm" [(ngModel)]="r.title" /></td>
+        <td><input class="form-control form-control-sm" [(ngModel)]="r.category" /></td>
+        <td><input class="form-control form-control-sm" [(ngModel)]="r.site" /></td>
+        <td><input class="form-control form-control-sm" [(ngModel)]="r.owner" /></td>
+        <td><input class="form-control form-control-sm" [(ngModel)]="r.status" /></td>
+
+        <td>
+          <input
+          type="date"
+          class="form-control form-control-sm"
+          [ngModel]="r.dueDate ? r.dueDate.substring(0,10) : ''"
+          (ngModelChange)="r.dueDate = $event || ''" />
+        </td>
+
+        <td class="text-truncate" style="max-width: 260px;" [title]="r.sourceS3Key || ''">
+          <code *ngIf="r.sourceS3Key; else dash">{{ r.sourceS3Key }}</code>
+          <ng-template #dash>—</ng-template>
+        </td>
+
+        <td class="text-end">
+          <button class="btn btn-sm btn-primary" (click)="save(r)">Save</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

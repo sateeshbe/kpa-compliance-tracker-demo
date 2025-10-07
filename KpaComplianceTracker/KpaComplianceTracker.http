@@ -1,0 +1,6 @@
+@KpaComplianceTracker_HostAddress = http://localhost:5262
+
+GET {{KpaComplianceTracker_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
